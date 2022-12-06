@@ -1,0 +1,50 @@
+/*Menu*/
+nav a:nth-child(2)::before { /*022*/
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #4c6b50;
+    position: absolute;
+    top: 2.8em;
+}
+nav a:nth-child(2) { /*012*/
+    color: #4c6b50;
+}
+
+h2 { /*001*/
+    margin-top: 5em;
+}
+/* Table */
+table { /*001*/
+    width: max-content;
+    margin: 3em auto;
+    text-align: center;
+    font-size: 1.1em;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+tr:first-of-type th { /*012*/
+    border-bottom: 1px solid #000;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+tr td:first-child { /*012*/
+    text-align: justify;
+}
+tr td { /*002*/
+    padding: .5em 1.5em;
+}
+tr:nth-child(3),
+tr:nth-child(5),
+tr:nth-child(7),
+tr:nth-child(9) { /*011*/
+    background-color: #e8fad77d;
+    color: #000;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    nav a:nth-child(2)::before {
+        top: 1.2em;
+    }
+}

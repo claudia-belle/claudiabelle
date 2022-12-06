@@ -1,0 +1,112 @@
+/*Menu*/
+nav a:nth-child(4)::before { /*022*/
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #4c6b50;
+    position: absolute;
+    top: 2.8em;
+}
+nav a:nth-child(4) { /*012*/
+    color: #4c6b50;
+}
+
+/* Personal data */
+main section > img { /*003*/
+    float: right;
+    margin-left: 2em;
+}
+main section:first-of-type { /*012*/
+    display: block;
+    margin: 4em 4em 0;
+}
+main section:first-of-type h2 { /*013*/
+    margin-top: 5em;
+}
+main section:first-of-type > p { /*013*/
+    text-align: justify;
+}
+
+/* Contact data */
+main section:last-of-type { /*012*/
+    text-align: center;
+    margin: 3em auto;
+}
+main section:last-of-type p,
+main section:last-of-type a { /*013*/
+    font-style: italic;
+    text-decoration-line: none;
+    color: #111;
+    background-color: transparent;
+    display: inline;
+    margin: 0 1em 1em;
+    padding: .3em .6em;
+}
+main section:last-of-type a:hover { /*023*/
+    text-decoration-line: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 1020px) {
+    main section > img {
+        margin: -2em 0 2em 2em;
+    }
+
+    main section:first-of-type h2 {
+        margin-top: 7em;
+    }
+
+    main section:last-of-type {
+        clear: right;
+    }
+
+}
+
+@media screen and (max-width: 885px) {
+    main section > img {
+        margin: 2em 0 2em 2em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav a:nth-child(4)::before {
+        top: 1.2em;
+    }
+
+    main section > img {
+        float: none;
+        display: flex;
+        margin: 7em auto 0;
+    }
+
+    main section:first-of-type h2 {
+        margin-top: 2em;
+    }
+
+    main section:last-of-type {
+        display: block;
+        margin: 3em auto;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    main section:first-of-type {
+        margin: 0;
+    }
+    main section:first-of-type p {
+        margin: .7em 2em;
+    }
+    
+    main section > img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    main section:last-of-type {
+        display: grid;
+        margin: 1em auto;
+    }
+    main section:last-of-type a {
+        margin: 0;
+    }
+}

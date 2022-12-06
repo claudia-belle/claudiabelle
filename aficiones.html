@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Mi sitio web</title>
+    <link rel="shortcut icon" href="./img/favicon.png"/>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./estilos/base.css"/>
+    <link rel="stylesheet" type="text/css" href="./estilos/aficiones.css"/>    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div id="cnt-header">
+            <a href="./index.html" title="Home"><img src="./img/sunflower.png" alt="Logo girasol"/></a>
+            <nav id="nav-header">
+                <a href="#" title="Mis aficiones">Aficiones</a>
+                <a href="./libros.html" title="Mis libros favoritos">Libros</a>
+                <a href="./musica.html" title="Música preferida">Música</a>
+                <a href="./sobremi.html" title="Información personal">Sobre mí</a>
+            </nav>
+            <div id="lupa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div id="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <div class="container" id="cnt-move">
+        <!-- Search bar -->
+        <div id="search-bar">
+            <input type="text" id="search-txt" placeholder="Buscar...">
+        </div>
+        <div id="search-cnt-cover"></div>
+        <!-- Resultados de busqueda -->
+        <div id="search-result"></div>
+
+        <!-- Page content-->
+        <main>
+            <section id="hobbies">
+                <h2>Mis aficiones</h2>
+                <div>
+                    <h3>Lectura</h3>
+                    <p>
+                    Desde pequeña una de las actividades que siempre me ha gustado hacer en mi tiempo libre es leer.
+                    Recuerdo los periodos de vacaciones de Navidad, sentada en el sofá bajo una manta y devorando las lecturas que me habían regalado.
+                    Así como en las largas tardes de verano, tomando el sol con un libro de la mano.
+                    </p>
+                    <p>
+                    Entre mis géneros preferidos están los libros clásicos, la novela negra, los romances de época o la novela histórica.
+                    </p>
+                    <img src="./img/libros.jpg" alt="Foto de librería de Madrid" width="250"/>
+                </div>
+                <div>
+                    <h3>Cocina</h3>
+                    <p>
+                    Gracias a la pasión de mi madre y mi abuela, disfruto mucho observando, aprendiendo y practicando en la cocina.
+                    Soy una persona curiosa y me gusta probar recetas de todo el mundo, así como elaborar mis propios platos con los cuatro ingredientes que encuentras al abrir la nevera.
+                    </p>
+                    <p>
+                    En mi casa el acto de <strong>comer</strong> no es una obligación, ni una necesidad para sobrevivir, sino una forma de compartir, estar en familia y vivir momentos llenos de vida alrededor de la misma mesa.
+                    </p>
+                    <img src="./img/cocinar.jpg" alt="Foto cocinando en casa" width="250"/>
+                </div>
+                <div>
+                    <h3>Naturaleza</h3>
+                    <p>
+                    Cuando busco tranquilidad, un momento para reflexionar o escapar del estrés de la rutina, mi primera opción es salir a dar un paseo al aire libre.
+                    Bien sea en un parque, en el campo o en el monte, el hecho de poder respirar aire fresco, sentir el viento, escuchar cantar a los pajarillos, me transmite paz.
+                    </p>
+                    <p>
+                    Este verano cumplí uno de mis sueños cuando hice los últimos 180kms del Camino de Santiago. ¡Ya tengo un proyecto en mente para hacerlo desde Francia!
+                    </p>
+                    <img src="./img/bosque.jpg" alt="Foto de un bosque en Galicia" width="250"/>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+            <section id="rrss">
+                <a href="mailto:uo298050@uniovi.es" title="Email corporativo Uniovi"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/claudia-garcia-bellesini" title="Perfil Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/claudia_beelle" title="Perfil instagram"><i class="fa-brands fa-instagram"></i></a>
+            </section>
+            <p>Claudia García Bellesini 2022 &copy;</p>
+        </footer>
+    </div>
+    <!-- JS -->
+    <script src="./js/base.js"></script>
+    <script src="https://kit.fontawesome.com/1ec76d0692.js" crossorigin="anonymous"></script>
+</body>
+</html>
