@@ -1,18 +1,16 @@
 //Menu responsivo
 document.getElementById("menu").addEventListener("click", show_menu);
-var menuOn = 0;
+
 function show_menu() {
     hide_search();
 
     document.getElementById("cnt-move").classList.toggle("move-container");
     document.getElementById("nav-header").classList.toggle("nav-visibility");
-    menuOn = 1;
 }
 
 function hide_menu() {
     document.getElementById("cnt-move").classList.remove("move-container");
     document.getElementById("nav-header").classList.remove("nav-visibility");
-    menuOn = 0;
 }
 
 //Barra de busqueda
@@ -25,6 +23,8 @@ document.getElementById("lupa").addEventListener("click", show_search);
 cover.addEventListener("click",hide_search);
 
 function show_search() {
+    hide_menu();
+
     if(barSearch.style.top == "90px") {
         hide_search();
     } else {

@@ -2,12 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi sitio web</title>
     <link rel="shortcut icon" href="./img/favicon.png"/>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./estilos/base.css"/>
     <link rel="stylesheet" type="text/css" href="./estilos/libros.css"/>
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -29,7 +30,7 @@
         </div>
     </header>
 
-    <div class="container" id="cnt-move">
+    <div id="cnt-move">
         <!-- Search bar -->
         <div id="search-bar">
             <input type="text" id="search-txt" placeholder="Buscar...">
@@ -42,67 +43,72 @@
         <main>
             <section id="reading">
                 <h2>Lecturas recomendadas</h2>
-                <table>
-                    <tr>
-                        <th>Título</th>
-                        <th>Autor</th>
-                        <th>Fecha publicación</th>
-                        <th>Portada</th>
-                    </tr>
-                    <tr>
-                        <td>Ángeles y demonios</td>
-                        <td>Dan Brown</td>
-                        <td>2000</td>
-                        <td><img src="./img/angeles.jpg" alt="Portada libro Ángeles y demonios" height="110"/></td>
-                    </tr>
-                    <tr>
-                        <td>El niño con el pijama de rayas</td>
-                        <td>John Boyne</td>
-                        <td>2006</td>
-                        <td><img src="./img/pijamarayas.jpg" alt="Portada libro El niño con el pijama de rayas" height="110"/></td>
-                    </tr>
-                    <tr>
-                        <td>El peregrino de Compostela</td>
-                        <td>Paulo Coelho</td>
-                        <td>1987</td>
-                        <td><img src="./img/peregrino.jpg" alt="Portada libro El peregrino" height="110"/></td>
-                    </tr>
-                    <tr>
-                        <td>La chica salvaje</td>
-                        <td>Delia Owens</td>
-                        <td>2018</td>
-                        <td><img src="./img/chicasalvaje.jpg" alt="Portada libro La chica salvaje" height="110"/></td>
-                    </tr>
-                    <tr>
-                        <td>Los pilares de la Tierra</td>
-                        <td>Ken Follet</td>
-                        <td>1989</td>
-                        <td><img src="./img/pilarestierra.jpg" alt="Portada libro Los pilares de la Tierra" height="110"/></td>
-                    </tr>
-                    <tr>
-                        <td>Orgullo y prejuicio</td>
-                        <td>Jane Austen</td>
-                        <td>1813</td>
-                        <td><img src="./img/orgulloprejuicio.jpg" alt="Portada libro Orgullo y prejuicio" height="110"/></td>
-                    </tr>
-                    <tr>
-                        <td>Pacto de lealtad</td>
-                        <td>Gonzalo Giner</td>
-                        <td>2014</td>
-                        <td><img src="./img/pactolealtad.jpg" alt="Portada libro Pacto de lealtad" height="110"/></td>
-                    </tr>
-                    <tr>
-                        <td>1984</td>
-                        <td>George Orwell</td>
-                        <td>1949</td>
-                        <td><img src="./img/1984.jpg" alt="Portada libro 1984" height="110"/></td>
-                    </tr>
-                    
+                <div id="cnt-table">
+                <table class="table table-sm table-hover align-middle mb-5">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th scope="col">Título</th>
+                            <th scope="col">Autor</th>
+                            <th scope="col" class="text-center">Fecha publicación</th>
+                            <th scope="col" class="text-center">Portada</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <td>Ángeles y demonios</td>
+                            <td class="table-light">Dan Brown</td>
+                            <td class="text-center">2000</td>
+                            <td class="text-center"><img src="./img/angeles.jpg" alt="Portada libro Ángeles y demonios" height="110"/></td>
+                        </tr>
+                        <tr>
+                            <td>El niño con el pijama de rayas</td>
+                            <td class="table-light">John Boyne</td>
+                            <td class="text-center">2006</td>
+                            <td class="text-center"><img src="./img/pijamarayas.jpg" alt="Portada libro El niño con el pijama de rayas" height="110"/></td>
+                        </tr>
+                        <tr>
+                            <td>El peregrino de Compostela</td>
+                            <td class="table-light">Paulo Coelho</td>
+                            <td class="text-center">1987</td>
+                            <td class="text-center"><img src="./img/peregrino.jpg" alt="Portada libro El peregrino" height="110"/></td>
+                        </tr>
+                        <tr>
+                            <td>La chica salvaje</td>
+                            <td class="table-light">Delia Owens</td>
+                            <td class="text-center">2018</td>
+                            <td class="text-center"><img src="./img/chicasalvaje.jpg" alt="Portada libro La chica salvaje" height="110"/></td>
+                        </tr>
+                        <tr>
+                            <td>Los pilares de la Tierra</td>
+                            <td class="table-light">Ken Follet</td>
+                            <td class="text-center">1989</td>
+                            <td class="text-center"><img src="./img/pilarestierra.jpg" alt="Portada libro Los pilares de la Tierra" height="110"/></td>
+                        </tr>
+                        <tr>
+                            <td>Orgullo y prejuicio</td>
+                            <td class="table-light">Jane Austen</td>
+                            <td class="text-center">1813</td>
+                            <td class="text-center"><img src="./img/orgulloprejuicio.jpg" alt="Portada libro Orgullo y prejuicio" height="110"/></td>
+                        </tr>
+                        <tr>
+                            <td>Pacto de lealtad</td>
+                            <td class="table-light">Gonzalo Giner</td>
+                            <td class="text-center">2014</td>
+                            <td class="text-center"><img src="./img/pactolealtad.jpg" alt="Portada libro Pacto de lealtad" height="110"/></td>
+                        </tr>
+                        <tr>
+                            <td>1984</td>
+                            <td class="table-light">George Orwell</td>
+                            <td class="text-center">1949</td>
+                            <td class="text-center"><img src="./img/1984.jpg" alt="Portada libro 1984" height="110"/></td>
+                        </tr>
+                    </tbody>
                 </table>
+                </div>
             </section>
         </main>
         <!-- Footer -->
-        <footer>
+        <footer class="footer">
             <section id="rrss">
                 <a href="mailto:uo298050@uniovi.es" title="Email corporativo Uniovi"><i class="fa-solid fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/claudia-garcia-bellesini" title="Perfil Linkedin"><i class="fa-brands fa-linkedin"></i></a>
@@ -114,5 +120,6 @@
     <!-- JS -->
     <script src="./js/base.js"></script>
     <script src="https://kit.fontawesome.com/1ec76d0692.js" crossorigin="anonymous"></script>
+    <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
