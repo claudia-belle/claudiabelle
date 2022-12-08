@@ -47,7 +47,7 @@ main section:last-of-type a:hover { /*023*/
 }
 
 /* Responsive */
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1050px) {
     main section > img {
         margin: -2em 0 2em 2em;
     }

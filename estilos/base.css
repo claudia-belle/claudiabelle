@@ -41,7 +41,7 @@ nav {
     justify-content: center;
 }
 /*002*/
-nav a, #lupa{
+nav a, #lupa button{
     color: #000;
     background-color: transparent;
     text-decoration-line: none; 
@@ -61,7 +61,7 @@ nav a:hover::before {
     top: 2.8em;
 }
 /*011*/
-nav a:hover, #lupa:hover {
+nav a:hover, #lupa button:hover {
     color: #4c6b50;
 }
 /*responsive menu*/
@@ -89,6 +89,10 @@ nav a:hover, #lupa:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+button {
+    border: none;
 }
 #search-bar {
     position: fixed;

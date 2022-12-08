@@ -1,6 +1,5 @@
 body {
     --bs-body-font-family: "Times New Roman","Garamond", serif;
-    --bs-body-font-size: 1.1em;
 }
 /*Menu*/
 nav a:nth-child(2)::before { /*022*/
@@ -14,25 +13,21 @@ nav a:nth-child(2)::before { /*022*/
 nav a:nth-child(2) { /*012*/
     color: #4c6b50;
 }
-
-h2 + div {
-    width: 60%;
-    margin: auto;
-}
-h2 {
+/*Content*/
+h2 { /*001*/
     margin: 5em auto 2em!important;
     font-size: 1.4em!important;
     font-weight: bold!important;
+}
+h2 + div { /*002*/
+    width: 80%;
+    margin: auto;
 }
 
 /* Responsive */
 @media screen and (max-width: 800px) {
     nav a:nth-child(2)::before {
         top: 1.2em;
-    }
-
-    h2 + div {
-        width: 70%;
     }
 }
 

@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./estilos/base.css"/>
     <link rel="stylesheet" type="text/css" href="./estilos/index.css"/>
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -21,7 +22,7 @@
                 <a href="./sobremi.html" title="Información personal">Sobre mí</a>
             </nav>
             <div id="lupa">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <button title="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </div>
         <div id="menu">
@@ -39,19 +40,49 @@
 
         <!-- Page content-->
         <main>
-            <section id="main-data">
-                <div>
-                    <h2>Enjoy</h2>
+            <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-            </section>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./img/slide1.JPG" class="d-block w-100" alt="Foto mural librería 'Me vuelves Lorca'">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="./img/slide2.jpg" class="d-block w-100" alt="Foto cocinando tortellinis caseros">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="./img/slide3.jpg" class="d-block w-100" alt="Foto paisaje bosque Camino de Santiago">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </main>
 
         <!-- Footer -->
         <footer>
             <section id="rrss">
-                <a href="mailto:uo298050@uniovi.es" title="Email corporativo Uniovi"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/claudia-garcia-bellesini" title="Perfil Linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/claudia_beelle" title="Perfil instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:uo298050@uniovi.es" title="Email corporativo Uniovi" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/claudia-garcia-bellesini" title="Perfil Linkedin"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/claudia_beelle" title="Perfil instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </section>
             <p>Claudia García Bellesini 2022 &copy;</p>
         </footer>
@@ -59,5 +90,6 @@
     <!-- JS -->
     <script src="./js/base.js"></script>
     <script src="https://kit.fontawesome.com/1ec76d0692.js" crossorigin="anonymous"></script>
+    <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
