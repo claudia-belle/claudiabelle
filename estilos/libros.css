@@ -23,6 +23,10 @@ h2 + div { /*002*/
     width: 80%;
     margin: auto;
 }
+tbody td i {
+    color: #4c6b50;
+    background-color: transparent;
+}
 
 /* Responsive */
 @media screen and (max-width: 800px) {

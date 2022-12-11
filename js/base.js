@@ -48,11 +48,13 @@ const keywords = [
     {text: 'Gustos', url:'./aficiones.html'},
     {text: 'Hobbies', url:'./aficiones.html'},
     {text: 'Libros', url:'./libros.html'},
-    {text: 'Lecturas favoritas', url:'./libros.html'},
+    {text: 'Libro favorito', url:'./libros.html'},
     {text: 'Musica', url:'./musica.html'},
     {text: 'Canciones favoritas', url:'./musica.html'},
-    {text: 'Sobre mi', url:'./sobremi.html'},
+    {text: 'Fecha de nacimiento', url:'./sobremi.html'},
     {text: 'Contacto', url:'./sobremi.html'},
+    {text: 'Correo electrónico', url:'./sobremi.html'},
+    {text: 'Email', url:'./sobremi.html'},
     {text: 'Datos personales', url:'./sobremi.html'},
 ];
 
