@@ -52,6 +52,7 @@ const keywords = [
     {text: 'Musica', url:'./musica.html'},
     {text: 'Canciones favoritas', url:'./musica.html'},
     {text: 'Fecha de nacimiento', url:'./sobremi.html'},
+    {text: 'Cumpleaños', url:'./sobremi.html'},
     {text: 'Contacto', url:'./sobremi.html#personal-data'},
     {text: 'Correo electrónico', url:'./sobremi.html#email'},
     {text: 'Email', url:'./sobremi.html#email'},
