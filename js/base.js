@@ -48,14 +48,14 @@ const keywords = [
     {text: 'Gustos', url:'./aficiones.html'},
     {text: 'Hobbies', url:'./aficiones.html'},
     {text: 'Libros', url:'./libros.html'},
-    {text: 'Libro favorito', url:'./libros.html'},
+    {text: 'Libro favorito', url:'./libros.html#fav-book'},
     {text: 'Musica', url:'./musica.html'},
     {text: 'Canciones favoritas', url:'./musica.html'},
     {text: 'Fecha de nacimiento', url:'./sobremi.html'},
-    {text: 'Contacto', url:'./sobremi.html'},
-    {text: 'Correo electrónico', url:'./sobremi.html'},
-    {text: 'Email', url:'./sobremi.html'},
-    {text: 'Datos personales', url:'./sobremi.html'},
+    {text: 'Contacto', url:'./sobremi.html#personal-data'},
+    {text: 'Correo electrónico', url:'./sobremi.html#email'},
+    {text: 'Email', url:'./sobremi.html#email'},
+    {text: 'Datos personales', url:'./sobremi.html#personal-data'},
 ];
 
 inputSearch.addEventListener("keyup", buscador_interno);
