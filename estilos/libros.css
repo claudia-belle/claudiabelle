@@ -14,12 +14,12 @@ nav a:nth-child(2) { /*012*/
     color: #4c6b50;
 }
 /*Content*/
-h2 { /*001*/
+h1 { /*001*/
     margin: 5em auto 2em!important;
     font-size: 1.4em!important;
     font-weight: bold!important;
 }
-h2 + div { /*002*/
+h1 + div { /*002*/
     width: 80%;
     margin: auto;
 }
@@ -36,7 +36,7 @@ tbody td i {
 }
 
 @media screen and (max-width: 530px) {
-    h2 + div {
+    h1 + div {
         width: 95%;
     }
 }

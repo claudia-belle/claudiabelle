@@ -20,7 +20,7 @@ main section:first-of-type { /*012*/
     display: block;
     margin: 4em 4em 0;
 }
-main section:first-of-type h2 { /*013*/
+main section:first-of-type h1 { /*013*/
     margin-top: 5em;
 }
 main section:first-of-type > p { /*013*/
@@ -52,7 +52,7 @@ main section:last-of-type a:hover { /*023*/
         margin: -2em 0 2em 2em;
     }
 
-    main section:first-of-type h2 {
+    main section:first-of-type h1 {
         margin-top: 7em;
     }
 
@@ -79,7 +79,7 @@ main section:last-of-type a:hover { /*023*/
         margin: 7em auto 0;
     }
 
-    main section:first-of-type h2 {
+    main section:first-of-type h1 {
         margin-top: 2em;
     }
 

@@ -16,10 +16,10 @@ main section { /*002*/
     width: max-content;
     margin: auto;
 }
-section h2 { /*001*/
+section h1 { /*001*/
     margin-top: 5em;
 }
-section h3 { /*001*/
+section h2 { /*001*/
     margin-top: 2em;
 }
 
