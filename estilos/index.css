@@ -1,14 +1,16 @@
-body { /*001*/
+body {
     --bs-body-font-family: "Times New Roman","Garamond", serif;
 }
-.carousel-inner { /*001*/
+.carousel-inner {
     margin-top: 120px;
     width: 100%;
     height: auto;
 }
-h2 { /*001*/
-    background-color: transparent;
-    color: #fff;
+.carousel-inner p {
+    background-color: rgba(255, 255, 255, 0.638);
+    color: #000;
+    font-style: italic;
+    font-size: larger;
 }
 
 /*Responsive*/
