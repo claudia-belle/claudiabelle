@@ -2,7 +2,7 @@ body {
     --bs-body-font-family: "Times New Roman","Garamond", serif;
 }
 .carousel-inner {
-    margin-top: 120px;
+    margin-top: 90px;
     width: 100%;
     height: auto;
 }
