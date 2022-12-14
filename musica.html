@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi sitio web</title>
+    <title>Gustos musicales</title>
     <link rel="shortcut icon" href="./img/favicon.png"/>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./estilos/base.css"/>
@@ -32,6 +32,7 @@
     <div id="cnt-move">
         <!-- Search bar -->
         <div id="search-bar">
+            <label for="search-txt" hidden>Buscar</label>
             <input type="text" id="search-txt" placeholder="Buscar...">
         </div>
         <div id="search-cnt-cover"></div>
@@ -44,12 +45,12 @@
                 <h2>Música para cada momento</h2>
                 <h3>Por las mañanas...</h3>
                 <ul>
-                    <li>Accidentally In Love - Counting Crows</li>
-                    <li>Don't Go Breaking My Heart - Elton John</li>
-                    <li>Eso Que Tú Me Das - Jarabe De Palo</li>
-                    <li>Walk Of Life - Dire Straits</li>
+                    <li>Accidentally In Love (Artista: Counting Crows)</li>
+                    <li>Don't Go Breaking My Heart (Artista: Elton John)</li>
+                    <li>Eso Que Tú Me Das (Artista: Jarabe De Palo)</li>
+                    <li>Walk Of Life (Artista: Dire Straits)</li>
                 </ul>
-                <audio src="./audio/eltonjohn.mp3" controls>Elton John</audio>
+                <audio name="audio1" src="./audio/eltonjohn.mp3" title="Don't Go Breaking My Heart, Elton John" controls></audio>
                 <h3>Trabajando...</h3>
                 <ul>
                     <li>Alive - Khalid</li>
@@ -57,7 +58,7 @@
                     <li>Pictures on My Wall - Lithe</li>
                     <li>Vienna - Billy Joel</li>
                 </ul>
-                <audio src="./audio/khalid.mp3" controls>Khalid</audio>
+                <audio src="./audio/khalid.mp3" title="Alive, Khalid" controls></audio>
                 <h3>En el gimnasio...</h3>
                 <ul>
                     <li>Blinding Lights - The Weekend</li>

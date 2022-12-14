@@ -1,6 +1,10 @@
-//Menu responsivo
+/*---------------------------------------
+    Comportamiento Menu hamburguesa
+-----------------------------------------*/
+//Evento clic
 document.getElementById("menu").addEventListener("click", show_menu);
 
+//Mostrar menu
 function show_menu() {
     hide_search();
 
@@ -8,20 +12,25 @@ function show_menu() {
     document.getElementById("nav-header").classList.toggle("nav-visibility");
 }
 
+//Ocultar menu
 function hide_menu() {
     document.getElementById("cnt-move").classList.remove("move-container");
     document.getElementById("nav-header").classList.remove("nav-visibility");
 }
 
-//Barra de busqueda
+/*-----------------------------------
+    Comportamiento Barra Busqueda
+-------------------------------------*/
 var barSearch = document.getElementById("search-bar");
 var cover = document.getElementById("search-cnt-cover");
 var inputSearch = document.getElementById("search-txt");
 var result = document.getElementById("search-result");
 
+//Evento clic
 document.getElementById("lupa").addEventListener("click", show_search);
 cover.addEventListener("click",hide_search);
 
+//Mostrar buscador
 function show_search() {
     hide_menu();
 
@@ -35,6 +44,7 @@ function show_search() {
     
 }
 
+//Ocultar buscador
 function hide_search() {
     barSearch.style.top = "-100px";
     cover.style.display = "none";
@@ -42,11 +52,10 @@ function hide_search() {
     inputSearch.value = "";
 }
 
-//Buscador
+//JSON con opciones de busqueda (keywords y URLs)
 const keywords = [
     {text: 'Aficiones', url:'./aficiones.html'},
     {text: 'Gustos', url:'./aficiones.html'},
-    {text: 'Hobbies', url:'./aficiones.html'},
     {text: 'Libros', url:'./libros.html'},
     {text: 'Libro favorito', url:'./libros.html#fav-book'},
     {text: 'Musica', url:'./musica.html'},
@@ -54,18 +63,22 @@ const keywords = [
     {text: 'Fecha de nacimiento', url:'./sobremi.html'},
     {text: 'Cumpleaños', url:'./sobremi.html'},
     {text: 'Contacto', url:'./sobremi.html#personal-data'},
-    {text: 'Correo electrónico', url:'./sobremi.html#email'},
+    {text: 'Correo electronico', url:'./sobremi.html#email'},
     {text: 'Email', url:'./sobremi.html#email'},
     {text: 'Datos personales', url:'./sobremi.html#personal-data'},
 ];
 
+//Evento teclear
 inputSearch.addEventListener("keyup", buscador_interno);
 
 function buscador_interno() {
+    //1 Inicializar con 0 resultados
     result.innerHTML = "";
 
+    //2 Recoger texto introducido por el usuario (MAY)
     let busqueda = inputSearch.value.toUpperCase();
 
+    //3 Comparar la busqueda con las opciones del json
     for(let keyword of keywords) {
         let value = keyword.text.toUpperCase();
         
@@ -83,6 +96,7 @@ function buscador_interno() {
         }
     }
 
+    //Si ningun resultado coincide mostrar aviso
     if(result.innerHTML === "") {
         result.innerHTML += `
             <li>
